@@ -1,0 +1,32 @@
+.btn-round {
+  fill: rgb(92, 92, 138);
+  width: 33px;
+  height: 33px;
+  position: relative;
+  border-radius: 50%;
+
+  padding: 5px;
+  margin: 3px;  
+  margin-top: 7px;
+  transition: transform 0.3s ease;
+}
+
+.btn-round:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.btn-round:hover:after {
+  transform: scale(1);
+}
+
+
+.btn-round:hover {
+  background-color: transparent;
+  transform: rotate(90deg);
+  cursor: pointer;
+  box-shadow: none;
+}
